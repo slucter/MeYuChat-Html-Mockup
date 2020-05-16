@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.wrapper-page{
+    background-image: url('../img/silhouette-of-person-holding-glass-mason-jar-1274260.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    display: flex;
+}
+.wrapper-page::after{
+    content: '';
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    
+}
+
+.container-app{
+    width: 40vw;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-chat{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 30px 5px rgba(0,0,0,.3);
+    display: flex;
+    margin-bottom: 1%;
+}
+.profile-chat{
+    width: 20%;
+    height: 100%;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-chat img{
+    width: 60%;
+    height: 75%;
+    border-radius: 50%;
+}
+.status-profile{
+    width: 80%;
+    height: 100%;
+    /* background-color: rgb(218, 196, 193); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.status-profile a{
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+}
+.status-profile p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #00d10a;
+}
+.chat-body{
+    width: 100%;
+    height: 82%;
+    /* background-color: rgb(255, 255, 255); */
+    background-image: url('../img/computer-3163437_1280.png');
+    display: block;
+}
+.friend-buble{
+    background-color: rgb(248, 224, 248);
+    padding: 10px;
+    box-shadow: 1px 1px 30px 5px rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.friend-buble p{
+    color: #6b6b6b;
+    margin-top: 5px;
+}
+.friend-buble h3{
+    font-weight: 400;
+}
+.my-buble{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 30px 5px rgba(0,0,0,.3);
+}
+.my-buble p{
+    margin-top: 5px;
+    color: #6b6b6b;
+}
+.my-buble h3{
+    font-weight: 400;
+}
+.chat-text{
+    width: 100%;
+    height: 8%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.chat-text input{
+    width: 70%;
+    height: 60px;
+    background-color: #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    font-size: 20px;
+}
+
+.group-button-chat{
+    width: 27%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.group-button-chat button{
+    width: 40%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 30px 5px rgba(0,0,0,.3);
+}
+.group-button-chat button:active{
+    box-shadow: 1px 1px 20px 5px rgba(0,0,0,.2);
+}
+.group-button-chat button img{
+    width: 40%;
+    height: 40%;
+}

@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.wrapper-page{
+    background-image: url('../img/silhouette-of-person-holding-glass-mason-jar-1274260.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    display: flex;
+}
+.wrapper-page::after{
+    content: '';
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    
+}
+
+.container-app{
+    width: 40vw;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head-title-section{
+    display: flex;
+    width: 96%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 30px 5px rgba(0,0,0,.1);
+    margin-bottom: 10px;
+}
+.head-title-section h3{
+    font-size: 20px;
+    padding: 20px 10px 20px 20px;
+    color: rgba(0,0,0,.9);
+}
+
+
+.search-section{
+    width: 96%;
+    height: 80px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 30px 5px rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search-section input{
+    width: 70%;
+    outline: none;
+    background-color: #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #000;
+    font-size: 20px;
+    padding: 10px 10px 10px 5px;
+    
+}
+
+.search-section button{
+    width: 25%;
+    height: 60%;
+    background-color: #fff;
+    box-shadow: 1px 1px 20px 5px rgba(0,0,0,.2);
+    transition: .3s;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.search-section button:active{
+    box-shadow: 1px 1px 30px 5px rgba(0,0,0,.1);
+}
+
+.section-list-friends{
+    width: 96%;
+    /* background-color: #fff; */
+    /* box-shadow: 1px 1px 30px 5px rgba(0,0,0,.1); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.li-fbox{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 1px 1px 30px 5px rgba(0,0,0,.1);
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.f-avatar{
+    flex: .8;
+    height: 100%;
+    /* background-color: saddlebrown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-avatar img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.f-name{
+    flex: 3;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+}
+.f-name a{
+    text-decoration: none;
+    color: rgba(0,0,0,.9);
+    font-size: 25px;
+    font-weight: 500;
+}
+.f-name p{
+    text-decoration: none;
+    color: rgba(0,0,0,.7);
+    font-size: 14px;
+    font-weight: 400;
+}
+.f-action{
+    flex: 1;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+.f-profile{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-profile a img{
+    width: 50px;
+    height: 50px;
+}
+.f-chat{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-chat a img{
+    width: 45px;
+    height: 45px;
+}
